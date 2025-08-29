@@ -1,0 +1,125 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4135,        117]
+NotebookOptionsPosition[      3350,         95]
+NotebookOutlinePosition[      3746,        111]
+CellTagsIndexPosition[      3703,        108]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"PureIntegrals", "=", 
+    RowBox[{"ReadList", "[", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+        "\"\<Files/PureIntegralBasisPtb1.txt\>\""}], "}"}], "]"}], "]"}]}], 
+   ";"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.964161534693695*^9, 3.964161538581613*^9}, {
+  3.96416159262316*^9, 3.964161633189774*^9}, {3.964161769997983*^9, 
+  3.964161770214674*^9}, {3.964161868158223*^9, 3.964161870797902*^9}, {
+  3.9652017820944767`*^9, 3.965201804159148*^9}, {3.965204517207321*^9, 
+  3.965204517335446*^9}, {3.965292336019356*^9, 3.965292358867209*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b81c07c2-dea4-4919-9b26-485af0e750d6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.965292374971192*^9, 
+  3.9652924010599546`*^9}},ExpressionUUID->"a5e2a08b-9289-44f2-9b06-\
+3553ae607a9a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["ep", "4"], " ", "s12", " ", "s123", " ", "s234"}], "-", 
+    RowBox[{
+     SuperscriptBox["ep", "4"], " ", "s12", " ", "s23", " ", "s56"}]}], ")"}],
+   " ", 
+  RowBox[{"ptb", "[", 
+   RowBox[{
+   "1", ",", "1", ",", "1", ",", "1", ",", "0", ",", "1", ",", "1", ",", "1", 
+    ",", "0", ",", "0", ",", "0"}], "]"}]}]], "Output",
+ CellChangeTimes->{{3.965292376241132*^9, 3.965292378543091*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"23204a3c-3915-4a31-bbb9-cb1a6f34ec16"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PureIntegrals2", "=", 
+   RowBox[{"PureIntegrals", "/.", 
+    RowBox[{
+     RowBox[{"ptb", "[", 
+      RowBox[{
+      "n1_", ",", "n2_", ",", "n3_", ",", "n4_", ",", "n5_", ",", "n6_", ",", 
+       "n7_", ",", "n8_", ",", "n9_", ",", "n10_", ",", "n11_"}], "]"}], ":>", 
+     RowBox[{"hxb", "[", 
+      RowBox[{
+      "n1", ",", "n2", ",", "n3", ",", "n4", ",", "n5", ",", "n6", ",", "n7", 
+       ",", "0", ",", "n8", ",", "0", ",", "n9", ",", "n10", ",", "n11"}], 
+      "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<Files/PureIntegralBasisPtb1.txt\>\""}], "}"}], "]"}], ",", 
+   "PureIntegrals2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.965292406354432*^9, 3.965292529715516*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"5bc55910-cdae-42bb-81f1-69aa7acbe7ad"],
+
+Cell[BoxData["\<\"/home/dschiebe/Documents/lanayru/PhD_Files/\
+PentaBoxImportingPureInts/Files/PureIntegralBasisPtb1.txt\"\>"], "Output",
+ CellChangeTimes->{3.96529253251882*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"f46d82ad-20c9-4702-98f2-a60abf3969c5"]
+}, Open  ]]
+},
+WindowSize->{1263.75, 1028.25},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Linux x86 (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3c6358ac-4b30-4d59-8da3-f483bdd53fe3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 779, 16, 50, "Input",ExpressionUUID->"b81c07c2-dea4-4919-9b26-485af0e750d6"],
+Cell[CellGroupData[{
+Cell[1362, 40, 154, 3, 29, "Input",ExpressionUUID->"a5e2a08b-9289-44f2-9b06-3553ae607a9a"],
+Cell[1519, 45, 557, 14, 35, "Output",ExpressionUUID->"23204a3c-3915-4a31-bbb9-cb1a6f34ec16"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2113, 64, 962, 23, 50, "Input",ExpressionUUID->"5bc55910-cdae-42bb-81f1-69aa7acbe7ad"],
+Cell[3078, 89, 256, 3, 33, "Output",ExpressionUUID->"f46d82ad-20c9-4702-98f2-a60abf3969c5"]
+}, Open  ]]
+}
+]
+*)
+
